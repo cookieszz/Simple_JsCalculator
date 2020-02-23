@@ -6,7 +6,6 @@ let calculator = document.querySelector('.calculator');
 
 let numOperation = '+-*/';
 
-
 calculator.addEventListener('click', function(e) {
     let targetDataset = e.target.dataset;
 
@@ -21,6 +20,9 @@ calculator.addEventListener('click', function(e) {
     }
     if(targetDataset.result){
         getResult(result.value);
+    }
+    if(targetDataset.cOne){
+        clearOne(result.value);
     }
 
     function getNumber(value){
@@ -46,6 +48,13 @@ calculator.addEventListener('click', function(e) {
             return result.value = '0';
         }
         result.value = eval(value);
+    }
+
+    function clearOne(value){
+        result.value = result.value.slice(0, result.value.length - 1);
+        if(!result.value){
+            result.value = '0';
+        }
     }
 
 });

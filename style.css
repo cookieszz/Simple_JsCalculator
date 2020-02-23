@@ -19,7 +19,7 @@ body {
 }
 .c-button {
     font-size: 18px;
-    width: 209px;
+    width: 136px;
     height: 60px;
     border-radius: 30px;
     margin-left: 10px;
@@ -69,10 +69,10 @@ body {
 }
 .result {
     margin: 12px 8px 0 8px;
-    font-size: 25px;
+    font-size: 28px;
     text-align: right;
     width: 280px;
-    height: 40px;
+    height: 45px;
     border-radius: 15px;
     background: #080303;
     color: #f7f0f0;
