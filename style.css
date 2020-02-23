@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(ocean.jpg);
+    background-size: 1366px 768px;
+}
+
+.calculator {
+    font-size: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 420px;
+    background: #080303;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.c-button {
+    font-size: 18px;
+    width: 209px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 0;
+    background: #080303;
+    color: #f7f0f0;
+    border: 1px solid #f7f0f0;
+    transition-delay: 0.005s;
+}
+.num-button {
+    margin-left: 10px;
+    margin-top: 6px;
+    font-size: 18px;
+    color: #f7f0f0;
+    display: inline-block;
+    width: 63px;
+    height: 62px;
+    border: 1px solid #f7f0f0;
+    border-radius: 30px;
+    background: #080303;
+    transition-delay: 0.005s;
+}
+
+.result:focus, .num-button:focus, .plus-button:focus, .c-button:focus{
+    outline: 0;
+}
+.num-button:active, .plus-button:active, .c-button:active{
+    background: #f7f0f0;
+    color: black;
+    border: 2px solid black;
+}
+.num-button:hover, .plus-button:hover, .c-button:hover{
+    border: 2px solid white;
+
+}
+.plus-button {
+    float: right;
+    font-size: 18px;
+    width: 61px;
+    height: 130px;
+    border-radius: 30px;
+    margin: 8px 11px 8px 0;
+    background: #080303;
+    color: #f7f0f0;
+    transition-delay: 0.005s;
+    border: 1px solid #f7f0f0;
+}
+.result {
+    margin: 12px 8px 0 8px;
+    font-size: 25px;
+    text-align: right;
+    width: 280px;
+    height: 40px;
+    border-radius: 15px;
+    background: #080303;
+    color: #f7f0f0;
+    border: 1px solid #f7f0f0;
+    padding-right: 4px;
+    overflow: auto;
+}
